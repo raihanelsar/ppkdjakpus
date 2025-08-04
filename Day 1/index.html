@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikel Teknologi</title>
+  <style>
+    /* Gaya Umum Halaman */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e6ecf4, #f2f6fa);
+      color: #333;
+    }
+
+    /* Header Utama */
+    header {
+      background: linear-gradient(to right, #d8dfeb, #46719c);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    /* Area Konten */
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Judul Besar (Bagian) */
+    h2 {
+      color: #0b6ef6;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      border-left: 5px solid #0b6ef6;
+      padding-left: 12px;
+    }
+
+    /* Subjudul */
+    h3 {
+      color: #1559c2;
+      font-size: 1.4rem;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+
+    /* Sub-subjudul */
+    h4 {
+      color: #3b75d1;
+      font-size: 1.1rem;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+
+    /* Paragraf */
+    p {
+      margin-left: 20px;
+      margin-top: 10px;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    /* Responsive di perangkat kecil 
+    @media (max-width: 600px) {
+      main {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    } */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Evolusi Teknologi Modern</h1>
+  </header>
+
+  <main>
+    <form action="login.php" method="POST">
+      <fieldset>
+        <legend>Login</legend>
+        <p>
+          <label>Username:</label>
+          <input type="text" name="username" placeholder="username...">
+        </p>
+        <p>
+          <label>Password</label>
+          <input type="password" name="password" placeholder="password...">
+        </p>
+        <p><label><input type="checkbox" name="remember" value="remember">Remember me</label>
+        </p>
+        <p>
+          <input type="submit" name="submit" value="Login">
+        </p>
+      </fieldset>
+    </form>
+
+    <p>
+
+    </p>
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>Baris 1</td>
+        <td rowspan="4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5FtQqUfTz662njKTkLL0wAFR8k7I2SfMLbw&s">
+        </td>
+        <td rowspan="4">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+        </td>
+      </tr>
+    </table>
+    <h2>1. Pendahuluan tentang Teknologi</h2>
+    <p>Teknologi telah mengubah cara hidup kita secara drastis, mulai dari komunikasi, pendidikan, hingga layanan
+      kesehatan dan transportasi.</p>
+
+    <h2>2. Kecerdasan Buatan</h2>
+    <h3>2.1 Apa itu AI?</h3>
+    <p>Kecerdasan Buatan (AI) mengacu pada sistem atau mesin yang meniru kecerdasan manusia untuk melakukan tugas dan
+      meningkatkan diri berdasarkan data.</p>
+
+    <h3>2.2 Aplikasi Kecerdasan Buatan</h3>
+    <h4>2.2.1 Kesehatan</h4>
+    <p>AI digunakan dalam diagnosis penyakit, penemuan obat, dan bahkan dalam operasi bedah dengan robot.</p>
+    <h4>2.2.2 Keuangan</h4>
+    <p>AI digunakan untuk mendeteksi penipuan, perdagangan algoritmik, dan chatbot layanan pelanggan.</p>
+
+    <!-- <h2>3. Kebangkitan Perangkat Pintar</h2>
+    <h3>3.1 Internet of Things (IoT)</h3>
+    <p>IoT menghubungkan benda sehari-hari seperti kulkas dan lampu ke internet, sehingga menjadi "pintar".</p>
+
+    <h3>3.2 Otomatisasi Rumah</h3>
+    <p>Rumah pintar memungkinkan pengendalian pencahayaan, keamanan, dan suhu dari jarak jauh melalui aplikasi atau
+      perintah suara.</p>
+
+    <h2>4. Masa Depan Teknologi</h2>
+    <h3>4.1 Komputasi Kuantum</h3>
+    <p>Komputer kuantum dapat merevolusi pemecahan masalah dalam sains, enkripsi, dan pembelajaran mesin.</p>
+
+    <h3>4.2 Pertimbangan Etis</h3>
+    <p>Teknologi harus berkembang secara bertanggung jawab, dengan mempertimbangkan privasi, kesenjangan sosial, dan
+      dampak otomatisasi terhadap pekerjaan.</p> -->
+
+    <p style="font-size: 100px;">&#128511; &#128511; &#128511; &#128511; &#128511;</p>
+
+    <span style='font-size:100px;'>&#9995; &#128075; &#9995; &#128075; &#9995;</span>
+
+
+  </main>
+</body>
+
+</html>
