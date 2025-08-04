@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" method="post" onsubmit="return false">
+    <label for="">Nilai 1:</label><br />
+    <input type="number" id="nilai1"><br />
+
+    <label for="">Nilai 2:</label><br />
+    <input type="number" id="nilai2"><br />
+
+    <label for="operator">Operator:</label>
+    <select id="operator">
+      <option value="tambah">+</option>
+      <option value="kurang">-</option>
+      <option value="kali">*</option>
+      <option value="bagi">/</option>
+    </select><br />
+
+    <button type="submit" onclick="hitung()">Hitung</button><br />
+
+    <label for="hasil">Hasil</label><br />
+    <input type="text" id="hasil" readonly>
+
+  </form>
+
+  <script>
+    function hitung() {
+      const nilai1 = parseFloat(document.querySelector("#nilai1").value);
+      const nilai2 = parseFloat(document.querySelector("#nilai2").value);
+      const operator = document.querySelector("#operator").value;
+      let hasil;
+
+      switch (operator) {
+        case 'tambah':
+          hasil = nilai1 + nilai2;
+          break;
+
+        case 'kurang':
+          hasil = nilai1 - nilai2;
+          break;
+
+        case 'kali':
+          hasil = nilai1 * nilai2;
+          break;
+
+        case 'bagi':
+          if (nilai2 !== 0) {
+            hasil = nilai1 / nilai2;
+          } else {
+            hasil = "Tidak bisa dibagi 0";
+          }
+          break;
+        default:
+          hasil = "Operator tidak dikenali";
+      }
+
+      // if (operator == "tambah") {
+      //   hasil = nilai1 + nilai2;
+      // } else if (operator == "kurang") {
+      //   hasil = nilai1 - nilai2;
+      // } else if (operator == "kali") {
+      //   hasil = nilai1 * nilai2;
+      // } else if (operator == "bagi") {
+      //   hasil = nilai2 !== 0 ? (nilai1 / nilai2) :
+      //     alert("ERROOOORRR....");
+      // }
+      document.querySelector("#hasil").value = hasil;
+    }
+  </script>
+
+</body>
+
+</html>
