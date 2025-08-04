@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="burger" onclick="togleMenu()">☰</div>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="https://www.canva.com/design/DAGsqAR5QMU/PDuYJ_XkkmlVydBDNwciaA/edit" target="_blank">Download
+            CV</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Raihan Elsar Kusuma, S.T.</h1>
+      <p>(Peserta PPKD Jak-Pus)</p>
+      <p>
+        I'm interested in Front-End Development and eager to improve my skills in the field.
+        I have participated in student organizations such as the Red Cross.
+        I’m passionate about photography and always ready to learn more!
+      </p>
+    </section>
+
+    <section class="overview">
+      <div class="overview-box">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="overview-box">
+        <h3>Experience</h3>
+        <ul>
+          <li>Internship at Telkom Indonesia</li>
+          <li>Internship at Kantor Pos Sawahlunto</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Raihan Elsar. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile menu toggle JS -->
+  <script>
+    function togleMenu() {
+      document.querySelector('nav').classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>

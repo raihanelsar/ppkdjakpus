@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js-burger-menu.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="burger" onclick="togleMenu()">☰</div>
+      <a href="homepage.html">Home</a>
+      <a href="https://www.canva.com/design/DAGsqAR5QMU/PDuYJ_XkkmlVydBDNwciaA/edit">Download CV</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="galeri.html">Galeri</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <p>
+        I'm graduated from Bachelor of Computer Engineering, Telkom University.</p>
+      <p>
+        I'm interest in Front-End Developer, i'd like to improve my skills in related filed.I was involved in student
+        organizations such as Red Cross.Passionated about Photography and want to learn more!</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WiboDHUtJ0E?si=nOhnPdWQ3_oRERLj"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Raihan Elsar.</p>
+  </footer>
+  <script>
+    function togleMenu() {
+      document.querySelector('nav').classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>

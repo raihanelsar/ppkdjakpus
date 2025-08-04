@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="burger" onclick="togleMenu()">☰</div>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="https://www.canva.com/design/DAGsqAR5QMU/PDuYJ_XkkmlVydBDNwciaA/edit" target="_blank">Download
+            CV</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions, feel free to reach out using the form below:</p>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Raihan Elsar. All rights reserved.</p>
+  </footer>
+
+  <!-- Inline burger toggle JS -->
+  <script>
+    function togleMenu() {
+      document.querySelector('nav').classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>
