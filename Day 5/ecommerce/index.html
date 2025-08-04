@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RE Store</title>
+  <link rel="shortcut icon" href="RE-putih.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Required Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    .card {
+      transition: transform 0.3s ease-in-out;
+      /* Smooth transition */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      /* Scales the card 5% larger on hover */
+    }
+
+    input:checked+.slider {
+      background-color: #2196F3;
+    }
+
+    input:checked+.slider:before {
+      transform: translateX(26px);
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">RE Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <label class="switch mt-2">
+              <input type="checkbox" id="mode-toggle">
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Welcome to RE Store</h1>
+      <p>Your one-stop shop for photography gear and more</p>
+      <img src="assets/img/camera.webp" style="max-width: 300px" alt="Camera image">
+      <br>
+      <a href="#pricing" class="btn btn-light mt-3">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- Product -->
+  <section id="pricing" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Pricing</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/img/22_-_KQ9500-2.avif" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Sony A6000</h5>
+              <p class="card-text">High-quality DSLR camera.</p>
+              <h5 class="card-text">Rp. 5.000.000,00-</h5>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/img/nikon3500.webp" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Nikon D3500</h5>
+              <p class="card-text">Sturdy and adjustable tripod.</p>
+              <h5 class="card-text">Rp. 7.000.000,00-</h5>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/img/10-07-25-101526.avif" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Canon G7</h5>
+              <p class="card-text">Professional studio lighting kit.</p>
+              <h5 class="card-text">Rp. 9.000.000,00-</h5>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="bg-primary text-white  py-5">
+    <div class="container-fluid text-center">
+      <h2>About Us</h2>
+      <p class="lead">Founded by Raihan Elsar, RE Store combines love for technology and photography to bring the best
+        gear to your hands.</p>
+
+      <div class="row align-items-center">
+        <!-- Kolom Gambar -->
+        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+          <img src="assets/img/storecamera.webp" class="img-fluid w-50" alt="Camera Store Showcase">
+        </div>
+
+        <!-- Kolom Accordion -->
+        <div class="col-lg-4 text-start">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
+                  plugin
+                  adds the appropriate classes that we use to style each element. These classes control the overall
+                  appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                  custom
+                  CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
+                  within
+                  the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                  collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall
+                  appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                  custom
+                  CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
+                  within
+                  the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-5">
+    <div class="container text-center">
+      <h2>Reviews</h2>
+      <div class="row g-3">
+        <!-- Card Template -->
+        <!-- Repeat for Shikamaru, Naruto, Sasuke -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/img/" class="card-img-top" alt="Shikamaru">
+            <div class="card-body">
+              <h5 class="card-title">Shikamaru</h5>
+              <p class="card-text">“It’s such a drag.”</p>
+              <div class="text-center">
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star" data-rating="1"></i>
+                  <i class="bi bi-star" data-rating="2"></i>
+                  <i class="bi bi-star" data-rating="3"></i>
+                  <i class="bi bi-star" data-rating="4"></i>
+                  <i class="bi bi-star" data-rating="5"></i>
+                  <p class="ratingValue text-muted mt-1">Select a rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat for Naruto -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/img/" class="card-img-top" alt="Naruto">
+            <div class="card-body">
+              <h5 class="card-title">Naruto</h5>
+              <p class="card-text">“Believe it!”</p>
+              <div class="text-center">
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star" data-rating="1"></i>
+                  <i class="bi bi-star" data-rating="2"></i>
+                  <i class="bi bi-star" data-rating="3"></i>
+                  <i class="bi bi-star" data-rating="4"></i>
+                  <i class="bi bi-star" data-rating="5"></i>
+                  <p class="ratingValue text-muted mt-1">Select a rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat for Sasuke -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/img/" class="card-img-top" alt="Sasuke">
+            <div class="card-body">
+              <h5 class="card-title">Sasuke</h5>
+              <p class="card-text">“I have long since closed my eyes...”</p>
+              <div class="text-center">
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star" data-rating="1"></i>
+                  <i class="bi bi-star" data-rating="2"></i>
+                  <i class="bi bi-star" data-rating="3"></i>
+                  <i class="bi bi-star" data-rating="4"></i>
+                  <i class="bi bi-star" data-rating="5"></i>
+                  <p class="ratingValue text-muted mt-1">Select a rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="row mb-3 input-group">
+          <div class="col-md-6 input-group">
+            <span class="input-group-text">
+              <i class="bi bi-person-circle"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="First Name">
+          </div>
+          <div class="col-md-6 mt-3 input-group">
+            <span class="input-group-text">
+              <i class="bi bi-person-circle"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="mb-3 input-group">
+          <span class="input-group-text">
+            <i class="bi bi-envelope"></i>
+          </span>
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="mb-3 input-group">
+          <span class="input-group-text">
+            <i class="bi bi-question"></i>
+          </span>
+          <select class="form-select" name="pertanyaan" id="pertanyaan" required>
+            <option value="" class="text-secondary">Select a Question</option>
+            <option value="">Question 1</option>
+            <option value="">Question 2</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">&copy; <span id="year"></span> RE Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const modeToggle = document.getElementById('mode-toggle');
+    const body = document.body;
+
+    const enableDarkMode = () => {
+      body.classList.add('dark-mode');
+      localStorage.setItem('dark-mode', 'enabled');
+    };
+
+    const disableDarkMode = () => {
+      body.classList.remove('dark-mode');
+      localStorage.setItem('dark-mode', 'disabled');
+    };
+
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+      enableDarkMode();
+      modeToggle.checked = true;
+    }
+
+    modeToggle.addEventListener('change', () => {
+      if (modeToggle.checked) {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    });
+  </script>
+
+  <!-- JavaScript for Star Behavior -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const ratingContainers = document.querySelectorAll('.star-rating');
+
+      ratingContainers.forEach(container => {
+        const stars = container.querySelectorAll('i');
+        const ratingText = container.querySelector('.ratingValue');
+        let selectedRating = 0;
+
+        stars.forEach((star, index) => {
+          star.addEventListener('mouseover', () => {
+            highlightStars(index + 1, stars);
+          });
+
+          star.addEventListener('mouseout', () => {
+            highlightStars(selectedRating, stars);
+          });
+
+          star.addEventListener('click', () => {
+            selectedRating = index + 1;
+            highlightStars(selectedRating, stars);
+            if (ratingText) {
+              ratingText.textContent = `You rated: ${selectedRating} star${selectedRating > 1 ? 's' : ''}`;
+            }
+          });
+        });
+
+        function highlightStars(rating, starList) {
+          starList.forEach((star, i) => {
+            star.classList.toggle('bi-star-fill', i < rating);
+            star.classList.toggle('bi-star', i >= rating);
+            star.style.color = i < rating ? '#ffc107' : '#6c757d';
+          });
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+
+</html>
