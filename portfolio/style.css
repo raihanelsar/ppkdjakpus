@@ -1,0 +1,85 @@
+/* variable global di dalam css */
+
+:root {
+  --primary-color: hsl(192, 29%, 29%);
+  --second-color: hsl(0, 0%, 91%);
+  --accent-color: hsl(175, 85%, 43%);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--primary-color); /* Warna latar utama */
+  color: white;                            /* Warna teks putih */
+  min-height: 100vh;                       /* Tinggi minimum layar penuh */
+  display: flex;                           /* Flex untuk menyusun konten */
+  align-items: center;                     /* Vertikal tengah */
+}
+
+/* Section Umum dengan tinggi penuh + padding atas */
+.page-section {
+  min-height: 100vh;   /* Tinggi minimum layar penuh */
+  padding-top: 80px;   /* Jarak dari atas halaman */
+}
+
+/* Utility untuk padding vertikal */
+.section-padding {
+  padding: 80px 0;     /* Padding atas & bawah */
+}
+
+/* Judul Section */
+.section-tittle {
+  position: relative;      /* Dibutuhkan untuk pseudo-element ::after */
+  margin-bottom: 50px;     /* Jarak bawah antar elemen */
+}
+
+/* Garis bawah dekoratif di bawah judul */
+.section-tittle::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;            /* Jarak dari teks ke garis */
+  left: 50%;                /* Tengah horizontal */
+  width: 80px;              /* Panjang garis */
+  height: 3px;              /* Tebal garis */
+  background-color: var(--primary-color); /* Warna garis */
+  transform: translateX(-50%); /* Pusatkan garis secara horizontal */
+}
+
+
+.lead {
+  font-weight: normal;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 3rem;
+  color: white;
+  
+}
+
+.fadei-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
