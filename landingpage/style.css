@@ -35,6 +35,18 @@ body {
   height: auto;
 }
 
+.carousel-indicators [data-bs-target] {
+  background-color: #4caf50;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
 /* Clients Section */
 .clients-section {
   position: relative;
